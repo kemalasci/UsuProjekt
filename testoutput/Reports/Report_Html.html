@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Kemal Asci</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 24, 2022 11:32:18 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 25, 2022 09:53:59 AM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 24, 2022 11:32:18 PM</h3>
+<h3>Jul 25, 2022 09:53:59 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 24, 2022 11:33:32 PM</h3>
+<h3>Jul 25, 2022 09:55:37 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='55%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='22%'><b>2</b> steps passed</small></div>
 <div>
 <small data-tooltip='22%'><b>2</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Home Page functionality":61.208,"Usu It Service Management page functionality":12.379
+"Home Page functionality":95.459,"Usu It Service Management page functionality":2.348
 };
 </script>
 <div class="row">
@@ -204,10 +204,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 2,
 failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 5,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -242,7 +242,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Home Page functionality</p>
             <p class="text-sm">
-              <span>23:32:19</span> / <span>00:01:01:208</span>
+              <span>09:53:59</span> / <span>00:01:35:459</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -251,9 +251,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Home Page functionality</h5>
-<span class='badge badge-success'>07.24.2022 23:32:19</span>
-<span class='badge badge-danger'>07.24.2022 23:33:20</span>
-<span class='badge badge-default'>00:01:01:208</span>
+<span class='badge badge-success'>07.25.2022 09:53:59</span>
+<span class='badge badge-danger'>07.25.2022 09:55:35</span>
+<span class='badge badge-default'>00:01:35:459</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -275,21 +275,17 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefs.LinkImageControlStepdefs.allLinksInTheHomePageShouldBeProperlyDefined()">
+              <div class="step fail-bg" title="stepdefs.LinkImageControlStepdefs.allLinksInTheHomePageShouldBeProperlyDefined()">
                 <span>When All links in the home page should be properly defined</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdefs.LinkImageControlStepdefs.allImageInTheHomePageShouldBeProperlyDefined()">
-                <span>Then All image in the home page should be properly defined</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-LRV2756', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kemal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 27e462b988514fb1ba5f8e654b2115b7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kemal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c0edc91d7ac05dd267930b0d43f6255
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -300,13 +296,18 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at utils.BaseClass.selenium_broken_images(BaseClass.java:241)
-	at stepdefs.LinkImageControlStepdefs.allImageInTheHomePageShouldBeProperlyDefined(LinkImageControlStepdefs.java:23)
-	at ✽.All image in the home page should be properly defined(file:///C:/Users/Kemal/IdeaProjects/UsuProjekt/src/test/java/features/Link_ImageControl.feature:6)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+	at utils.BaseClass.verifyLinks(BaseClass.java:218)
+	at stepdefs.LinkImageControlStepdefs.allLinksInTheHomePageShouldBeProperlyDefined(LinkImageControlStepdefs.java:21)
+	at ✽.All links in the home page should be properly defined(file:///C:/Users/Kemal/IdeaProjects/UsuProjekt/src/test/java/features/Link_ImageControl.feature:5)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.LinkImageControlStepdefs.allImageInTheHomePageShouldBeProperlyDefined()">
+                <span>Then All image in the home page should be properly defined</span>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -322,7 +323,7 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
           <div class="test-detail">
             <p class="name">Usu It Service Management page functionality</p>
             <p class="text-sm">
-              <span>23:33:20</span> / <span>00:00:12:379</span>
+              <span>09:55:35</span> / <span>00:00:02:348</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -331,9 +332,9 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Usu It Service Management page functionality</h5>
-<span class='badge badge-success'>07.24.2022 23:33:20</span>
-<span class='badge badge-danger'>07.24.2022 23:33:32</span>
-<span class='badge badge-default'>00:00:12:379</span>
+<span class='badge badge-success'>07.25.2022 09:55:35</span>
+<span class='badge badge-danger'>07.25.2022 09:55:37</span>
+<span class='badge badge-default'>00:00:02:348</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -355,26 +356,16 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefs.Usu_It_ManagementStepdefs.usuItServiceManagementShouldBeClickable()">
+              <div class="step fail-bg" title="stepdefs.Usu_It_ManagementStepdefs.usuItServiceManagementShouldBeClickable()">
                 <span>When Usu It Service Management should be clickable</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefs.Usu_It_ManagementStepdefs.userShouldBeAbleToGoToUsuItServiceManagementWebPage()">
-                <span>Then User should be able to go to Usu It Service Management web page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdefs.Usu_It_ManagementStepdefs.theUserShouldBeAbleToFillTheWebPresentationForm()">
-                <span>And The user should be able to fill the web presentation form</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="firstname-7d166885-fec4-44c0-bfef-bc50fb1e263a" class="hs-input" type="text" name="firstname" required="" value="" placeholder="Vorname" autocomplete="given-name" data-reactid=".hbspt-forms-0.1:$0.1:$firstname.$firstname.0" inputmode="text"> is not clickable at point (634, 89). Other element would receive the click: <a class="top__main-link " href="#→kundenerlebnis">...</a>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="top__main-link " href="#→lsungen">...</a> is not clickable at point (471, 60). Other element would receive the click: <div class="cookiefirst-root notranslate cf14al cf2r_J cf19Bv" tabindex="-1">...</div>
   (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-LRV2756', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kemal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 27e462b988514fb1ba5f8e654b2115b7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kemal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c0edc91d7ac05dd267930b0d43f6255
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -388,10 +379,20 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at utils.BaseClass.clickTo(BaseClass.java:83)
-	at stepdefs.Usu_It_ManagementStepdefs.theUserShouldBeAbleToFillTheWebPresentationForm(Usu_It_ManagementStepdefs.java:41)
-	at ✽.The user should be able to fill the web presentation form(file:///C:/Users/Kemal/IdeaProjects/UsuProjekt/src/test/java/features/Usu_It_Management.feature:8)
+	at stepdefs.Usu_It_ManagementStepdefs.usuItServiceManagementShouldBeClickable(Usu_It_ManagementStepdefs.java:28)
+	at ✽.Usu It Service Management should be clickable(file:///C:/Users/Kemal/IdeaProjects/UsuProjekt/src/test/java/features/Usu_It_Management.feature:6)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.Usu_It_ManagementStepdefs.userShouldBeAbleToGoToUsuItServiceManagementWebPage()">
+                <span>Then User should be able to go to Usu It Service Management web page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.Usu_It_ManagementStepdefs.theUserShouldBeAbleToFillTheWebPresentationForm()">
+                <span>And The user should be able to fill the web presentation form</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepdefs.Usu_It_ManagementStepdefs.theUserShouldBeAbleToClickTheSubmitButton()">
@@ -451,7 +452,7 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:32:19 PM</td>
+<td>09:53:59 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>User should be able to use Home Page functionality</a>
 <div class="">
@@ -461,7 +462,7 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:33:20 PM</td>
+<td>09:55:35 AM</td>
 <td>
 <a href="#" class="linked" test-id='6' id='7'>User should be able to use Usu It Service Management Page functionality</a>
 <div class="">
@@ -494,6 +495,42 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
+<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>09:54:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>When All links in the home page should be properly defined</a>
+<div class="">
+<span class="badge badge-default">Home Page functionality.User should be able to use Home Page functionality.When All links in the home page should be properly defined</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
 <p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
@@ -513,47 +550,11 @@ Session ID: 27e462b988514fb1ba5f8e654b2115b7
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:33:31 PM</td>
+<td>09:55:36 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='11'>And The user should be able to fill the web presentation form</a>
+<a href="#" class="linked" test-id='6' id='9'>When Usu It Service Management should be clickable</a>
 <div class="">
-<span class="badge badge-default">Usu It Service Management page functionality.User should be able to use Usu It Service Management Page functionality.And The user should be able to fill the web presentation form</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>23:33:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='5'>Then All image in the home page should be properly defined</a>
-<div class="">
-<span class="badge badge-default">Home Page functionality.User should be able to use Home Page functionality.Then All image in the home page should be properly defined</span>
+<span class="badge badge-default">Usu It Service Management page functionality.User should be able to use Usu It Service Management Page functionality.When Usu It Service Management should be clickable</span>
 </div>
 </td>
 </tr>
